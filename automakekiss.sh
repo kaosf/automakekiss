@@ -20,11 +20,12 @@ a.out: foo.c
 	gcc foo.c
 
 install:
-	mkdir -p $(PREFIX)/bin
-	cp a.out $(PREFIX)/bin
+	mkdir -p \$(PREFIX)/bin
+	cp a.out \$(PREFIX)/bin
 
 uninstall:
-	rm -f $(PREFIX)/bin/a.out
+	rm -f \$(PREFIX)/bin/a.out
 
 clean:
 	rm -f a.out
+EOF
