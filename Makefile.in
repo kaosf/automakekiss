@@ -1,0 +1,17 @@
+PREFIX=
+
+all: automakekiss
+
+automake: automakekiss.sh
+	cp automakekiss.sh automakekiss
+	chmod +x automakekiss
+
+install:
+	mkdir -p $(PREFIX)/bin
+	cp automakekiss $(PREFIX)/bin
+
+uninstall:
+	rm $(PREFIX)/bin/automakekiss
+
+clean:
+	rm automakekiss
