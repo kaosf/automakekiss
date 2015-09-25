@@ -11,7 +11,7 @@ install:
 	cp automakekiss $(PREFIX)/bin
 
 uninstall:
-	rm $(PREFIX)/bin/automakekiss
+	rm -f $(PREFIX)/bin/automakekiss
 
 clean:
-	rm automakekiss
+	rm -f automakekiss

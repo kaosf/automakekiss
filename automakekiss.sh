@@ -24,7 +24,7 @@ install:
 	cp a.out $(PREFIX)/bin
 
 uninstall:
-	rm $(PREFIX)/bin/a.out
+	rm -f $(PREFIX)/bin/a.out
 
 clean:
-	rm a.out
+	rm -f a.out
