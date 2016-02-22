@@ -7,7 +7,7 @@ PREFIX=/usr/local
 if [[ \$1 == --prefix=* ]]; then
   PREFIX=\`echo \$1 | sed 's/--prefix=//'\`
 fi
-sed "s|PREFIX=|PREFIX=\${PREFIX}|" Makefile.in > Makefile
+sed "s|^PREFIX=|PREFIX=\${PREFIX}|" Makefile.in > Makefile
 EOF
 chmod +x configure
 
