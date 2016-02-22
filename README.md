@@ -46,4 +46,4 @@ for my simple projects.
 
 [MIT](http://opensource.org/licenses/MIT)
 
-Copyright (C) 2015 ka
+Copyright (C) 2015-2016 ka
