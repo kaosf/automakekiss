@@ -29,3 +29,9 @@ uninstall:
 clean:
 	rm -f a.out
 EOF
+
+if [ -f .gitignore ]; then
+  if ! grep -q Makefile .gitignore; then
+    echo '/Makefile' >> .gitignore
+  fi
+fi
